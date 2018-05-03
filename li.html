@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{margin: 0; padding: 0;}
+        th, td{width: 50px; height: 30px; text-align: center;}
+        th{cursor: pointer; border: 1px solid transparent;}
+        th:hover{border: 1px solid greenyellow;}
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>111</th>
+        <th>222</th>
+        <th>333</th>
+    </tr>
+    <tr>
+        <td>111</td>
+        <td>222</td>
+        <td>333</td>
+    </tr>
+</table>
+<script type="text/javascript">
+    var ths = document.getElementsByTagName('th'),
+        tds = document.getElementsByTagName('td');
+    for(var i = 0; i < ths.length; i++){
+        ths[i].index = i;
+        ths[i].onclick = function () {
+            tds[this.index].style.backgroundColor = 'red';
+        }
+    }
+</script>
+</body>
+</html>
