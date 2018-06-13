@@ -28,3 +28,24 @@ window.onscroll=function()
         f1.className = "function";
     } 
 }
+
+var $img = $('img'); 
+$('input[type=file]').change(function() { 
+    var reader = new FileReader(); 
+    reader.onload = function(e) { 
+        $img.prop('src', e.target.result); 
+    } 
+    reader.readAsDataURL(this.files[0]); 
+ 
+    $('img').load(function() { 
+        $(this).show(); 
+    }); 
+}); 
+
+function editImage(){
+    var gs=$('#gs').val();
+    var blur=$('blur').val();
+    $('#showimg img').css('-webkit-filter','grayscale('+gs+'%)blur('+blur+'px');
+}
+
+$('input[type=range]').change(editImage).mousemove(editImage);
