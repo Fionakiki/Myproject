@@ -37,36 +37,53 @@
 			<div class="editor">
 				<div class="object">
 					<div class="title">
-            	        <div class="list1">工</div>
-            	        <div class="list2">具</div>
-            	        <div class="list3">栏</div>
-            	    </div>
-            	    <!--<button class="create">制作Q版图片</button>
-            	    <button class="create">制作证件照</button>
-            	    <button class="create">添加滤镜</button>-->
-            	    <button class="create">制作证件照</button>
-            	    <!--<form id="imageEditor">
-            	    	<p>
-            	    		<label for="gs">Grayscale</label>
-            	    		<input id="gs" name="gs" type="range" min="0" max="100" value="0">
-            	    	</p>
-            	    	<p>
-            	    		<label for="blur">Blur</label>
-            	    		<input id="blur" name="blur" type="range" min="0" max="10" value="0">
-            	    	</p>
-            	    </form>-->
-                </div>
-				<div class="onload">
-			        <input type="file" class="choose" />
-                    <div id="showimg" class="preview-container">
-                    	<img class="picture">
-                    </div>
-                </div>
+						<div class="list1">工</div>
+						<div class="list2">具</div>
+						<div class="list3">栏</div>
+						<!--<div class="list4">The</div>
+						<div class="list5">toolbar</div>-->
+					</div>
+					<ul>
+						<li>
+							<input type="checkbox" class="t" id="a"/><label for="a">滤&nbsp&nbsp镜</label>
+						    <div class="hide">
+							    My Videos<br/>
+						        My Downloaded Videos<br/>
+						        My Well Dodgy Videos<br/>
+						    </div>
+					    </li>
+					    <li>
+					    	<input type="checkbox" class="t" id="b"/><label for="b">边&nbsp&nbsp框</label>
+					        <div class="hide">
+					        	<img class="beauty" src="./images/icon.png">
+					            <button class="option" onclick="style1()">双线框</button><br/>
+							    <img class="beauty" src="./images/icon.png">  
+							    <button class="option" id="water">凸出框</button><br/>
+							    <img class="beauty" src="./images/icon.png">
+							    <button class="option">Poke A Friends</button><br/>
+					        </div>
+				        </li>
+				        <li>
+				        	<input type="checkbox" class="t" id="c"/><label for="c">xx</label>
+				            <div class="hide">
+					            My Deviant Art<br/>
+					            Latest Dribble Images<br/>
+					            Sample Flickr Stream<br/>
+					            Sample Picasa Stream<br/>
+				            </div>
+			            </li>
+		            </ul>
+	            </div>
+	            <div class="onload">
+		            <input type="file" class="choose" />
+		            <div id="showimg" class="preview-container">
+			                <img id="images" class="picture">
+		            </div>
+	            </div>
             </div>
         </div>
-
         <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
         <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
         <script type="text/javascript" src="js/link.js"></script>
-	</body>
+    </body>
 </html>
