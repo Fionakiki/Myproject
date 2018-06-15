@@ -42,10 +42,23 @@ $('input[type=file]').change(function() {
     }); 
 }); 
 
-function editImage(){
-    var gs=$('#gs').val();
-    var blur=$('blur').val();
-    $('#showimg img').css('-webkit-filter','grayscale('+gs+'%)blur('+blur+'px');
+function style1(){
+    var sty1=document.getElementById("images");
+    sty1.className = "double-border";
 }
 
-$('input[type=range]').change(editImage).mousemove(editImage);
+/*$("input:radio").click(function(){  
+    var domName = $(this).attr('name');//获取当前单选框控件name 属性值   
+    var checkedState = $(this).attr('checked');//记录当前选中状态  
+    $("input:radio[name='" + domName + "']").attr('checked',false);//1.  
+    $(this).attr('checked',true);//2.  
+    if(checkedState == 'checked'){  
+        $(this).attr('checked',false); //3.  
+    }  
+}); */
+
+var oDiv = document.getElementById('water');
+oDiv.onclick=function(){
+    var sty2=document.getElementById("images");
+    sty2.className = "outset-border";
+}
