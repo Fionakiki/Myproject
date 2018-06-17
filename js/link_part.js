@@ -6,16 +6,16 @@
  */
 
 function home(){
-	window.location="./index.html";
+	window.location="../index.html";
 }
 function about(){
-	window.location="./html/index_about.html";
+	window.location="./index_about.html";
 }
 function edit(){
-	window.location="./html/index_edit.html";
+	window.location="./index_edit.html";
 }
 function contact(){
-	window.location="./html/index_contact.html";
+	window.location="./index_contact.html";
 }
 
 window.onscroll=function()
