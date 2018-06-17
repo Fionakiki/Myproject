@@ -72,7 +72,7 @@ body{
     _bottom:auto;
     _top:expression(eval(document.documentElement.scrollTop));
 }
-.home,.about,.case,.contact
+.home,.about,.edit,.contact
 {
 	width:12.5%;
 	margin-left: 2%;
@@ -92,14 +92,14 @@ body{
 	position: absolute;
     margin-left: -5%;
 }
-.home-p1,.about-p1,.case-p1,.contact-p1{
+.home-p1,.about-p1,.edit-p1,.contact-p1{
 	margin-bottom: 15px;
 	font-size: 14px;
 }
-.home:hover,.about:hover,.case:hover,.contact:hover{
+.home:hover,.about:hover,.edit:hover,.contact:hover{
 	cursor:pointer;
 }
-.home:hover .line,.case:hover .line,.contact:hover .line
+.home:hover .line,.edit:hover .line,.contact:hover .line
 {
 	animation: test 0.4s ease;
     border: 1px solid #000;
