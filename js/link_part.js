@@ -28,3 +28,16 @@ window.onscroll=function()
         f1.className = "function";
     } 
 }
+
+var $img = $('img'); 
+$('input[type=file]').change(function() { 
+    var reader = new FileReader(); 
+    reader.onload = function(e) { 
+        $img.prop('src', e.target.result); 
+    } 
+    reader.readAsDataURL(this.files[0]); 
+ 
+    $('img').load(function() { 
+        $(this).show(); 
+    }); 
+});
