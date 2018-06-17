@@ -29,7 +29,7 @@ window.onscroll=function()
     } 
 }
 
-var $img = $('img'); 
+var $img = $('.picture'); 
 $('input[type=file]').change(function() { 
     var reader = new FileReader(); 
     reader.onload = function(e) { 
@@ -41,3 +41,24 @@ $('input[type=file]').change(function() {
         $(this).show(); 
     }); 
 });
+
+
+function style1(){
+	var sty1=document.getElementById("images");
+	if(jQuery("input[type='file']").val()==""){
+		alert("请上传照片");
+    }
+    else{
+    	sty1.className="double-border";
+    }
+}
+
+function style2(){
+	var sty2=document.getElementById("images");
+	if(jQuery("input[type='file']").val()==""){
+		sty2.className="picture";
+    }
+    else{
+    	sty2.className="outset-border";
+    }
+}
