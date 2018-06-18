@@ -47,9 +47,45 @@
 						<li>
 							<input type="checkbox" class="t" id="a"/><label for="a">滤&nbsp&nbsp镜</label>
 						    <div class="hide">
-							    My Videos<br/>
-						        My Downloaded Videos<br/>
-						        My Well Dodgy Videos<br/>
+							    <form id="sliders">
+				            	<p>
+						              <label for="gs">灰度</label>
+						               <input id="gs" name="gs" type="range" min=0 max=100 value=0>
+					            </p>
+					            <p>
+						              <label for="blur">模糊</label>
+					                	<input id="blur" name="blur" type="range" min=0 max=10 value=0>
+				             	</p>
+				             	<p>
+				             		<label for="br">亮度</label>
+				             		<input id="br" name="br" type="range" min=0 max=200 value=100>
+				             	</p>
+				             	<p>
+				             		<label for="ct">对比度</label>
+				             		<input id="ct" name="ct" type="range" min=0 max=200 value=100>
+				             	</p>
+				             	<p>
+				             		<label for="huer">色调</label>
+				             		<input id="huer" name="huer" type="range" min=0 max=360 value=0>
+				             	</p>
+				             	<p>
+				             		<label for="opacity">透明度</label>
+				             		<input id="opacity" name="opacity" type="range" min=0 max=100 value=100>
+				             	</p>
+				             	<p>
+				             		<label for="invert">色彩反转</label>
+				             		<input id="invert" name="invert" type="range" min=0 max=100 value=0>
+				             	</p>
+				             	<p>
+				             		<label for="saturate">饱和度</label>
+				             		<input id="saturate" name="saturate" type="range" min=0 max=500 value=100>
+				             	</p>
+				             	<p>
+				             		<label for="sepia">发黄</label>
+				             		<input id="sepia" name="sepia" type="range" min=0 max=100 value=0>
+				             	</p>
+				             	<input type="reset" form="sliders" id="reset" value="Reset" />
+				             </form>
 						    </div>
 					    </li>
 					    <li>
