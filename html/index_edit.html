@@ -46,7 +46,7 @@
 					<ul>
 						<li>
 							<input type="checkbox" class="t" id="a"/><label for="a">滤&nbsp&nbsp镜</label>
-						    <div class="hide">
+						     <div class="hide">
 							    <form id="sliders">
 				            	<p>
 						              <label for="gs">灰度</label>
@@ -96,7 +96,9 @@
 							    <img class="beauty" src="../images/icon.png">  
 							    <button class="option" onclick="style2()">凸出框</button><br/>
 							    <img class="beauty" src="../images/icon.png">
-							    <button class="option">Poke A Friends</button><br/>
+							    <button class="option" onclick="style3()">脊状框</button><br/>
+							    <img class="beauty" src="../images/icon.png">
+							    <button class="option" onclick="style4()">图片框</button><br/>
 					        </div>
 				        </li>
 				        <li>
@@ -111,9 +113,16 @@
 		            </ul>
 	            </div>
 	            <div class="onload">
-		            <input type="file" class="choose" />
+		            <input type="file" class="file" id="fileElem" />
+		            <div class="select">
+		                <a href="#" id="fileSelect">上传图片</a>
+		            </div>
 		            <div id="showimg" class="preview-container">
-			                <img id="images" class="picture">
+		            	<div class="bgshow" id="bgshow">
+		            		<div calss="loshow" id="loshow"> 
+			                    <img id="images" class="picture">
+			                </div>
+			            </div>
 		            </div>
 	            </div>
             </div>
