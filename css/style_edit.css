@@ -143,12 +143,6 @@ body{
 .list5{
 	color: #C6E2FF;
 }
-
-
-
-
-
-
 .create{
 	width:60%;
 	height:50px;
@@ -164,10 +158,14 @@ body{
 	width:73%;
 	margin-left: 2%;
 }
-.choose{
-	margin-left: 70%;
+.file{
+	display: none;
+}
+.select{
+	font-family: 宋体;
+	margin-left: 80%;
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 .preview-container{
 	width:800px;
@@ -205,6 +203,15 @@ body{
 	vertical-align:middle;
     border: 5px outset #ddd;
 }
+
+.ridge-border{
+	max-width:60%;
+	width:expression(this.width>60%?"60%":auto);
+	max-height:300px;
+	height:expression(this.height>300?"300":auto);
+	vertical-align:middle;
+    border: 5px ridge #ddd;
+}
 ul{
     list-style: none;
     width:70%;
@@ -240,7 +247,6 @@ label{
 input[type=checkbox]:checked+label+div{
     display: block;    
 }
-
 
 input[type=range] {
     /*removes default webkit styles*/
@@ -312,4 +318,28 @@ input[type=range]:hover {
 	background-color: #fff;
 	border:none;
 	outline: none;
+}
+.bghide{
+	background: #000 url(../images/watermark.jpg) no-repeat;
+	width:55%;
+	height:350px;
+	display: inline-block;
+	vertical-align:middle;
+	text-align: center;
+}
+.lohide{
+	width:600px;
+	height:350px;
+	display: table-cell;
+	vertical-align:middle;
+	text-align: center;
+}
+.transparent {
+	max-width:100%;
+ 	width:expression(this.width>100%?"100%":auto);
+	max-height:300px;
+	height:expression(this.height>300?"300":auto);
+	vertical-align:middle;
+    filter:alpha(opacity=75);
+    opacity:.75;
 }
