@@ -6,16 +6,16 @@
  */
 
 function home(){
-    window.location="../index.html";
+	window.location="../index.html";
 }
 function about(){
-    window.location="./index_about.html";
+	window.location="./index_about.html";
 }
 function edit(){
-    window.location="./index_edit.html";
+	window.location="./index_edit.html";
 }
 function contact(){
-    window.location="./index_contact.html";
+	window.location="./index_contact.html";
 }
 
 window.onscroll=function()
@@ -30,7 +30,16 @@ window.onscroll=function()
 }
 
 var $img = $('.picture'); 
-$('input[type=file]').change(function() { 
+$('input[type=file]').change(function() {
+    if(typeof FileReader=='undifined')          //判断浏览器是否支持filereader  
+    {  
+        alert("抱歉，你的浏览器不支持 FileReader");   
+    }    
+    if(!/image\/\w+/.test(this.files[0].type))           //判断获取的是否为图片文件  
+    {  
+        alert("请确保文件为图像文件");  
+    } 
+    else{
     var reader = new FileReader(); 
     reader.onload = function(e) { 
         $img.prop('src', e.target.result); 
@@ -40,28 +49,86 @@ $('input[type=file]').change(function() {
     $('img').load(function() { 
         $(this).show(); 
     }); 
+}
 });
 
+var style=document.getElementById("images");
+var bgshow=document.getElementById("bgshow");
+var loshow=document.getElementById("loshow");
 
 function style1(){
-    var sty1=document.getElementById("images");
-    if(jQuery("input[type='file']").val()==""){
-        alert("请上传照片");
+	if(jQuery("input[type='file']").val()==""){
+		alert("请上传照片");
+		return;
+    }
+    if(style.className=="picture"||style.className=="outset-border"||style.className=="ridge-border"||style.className=="transparent"){
+    	bgshow.className="bgshow";
+        loshow.className="loshow";
+        style.className="double-border";
     }
     else{
-        sty1.className="double-border";
+    	style.className="picture";
     }
 }
 
 function style2(){
-    var sty2=document.getElementById("images");
-    if(jQuery("input[type='file']").val()==""){
-        sty2.className="picture";
-    }
+	if(jQuery("input[type='file']").val()==""){
+		alert("请上传照片");
+		return;
+	}
+	if(style.className=="picture"||style.className=="double-border"||style.className=="ridge-border"||style.className=="transparent"){
+    	bgshow.className="bgshow";
+        loshow.className="loshow";
+        style.className="outset-border";
+	}
     else{
-        sty2.className="outset-border";
+    	style.className="picture";
     }
 }
+
+function style3(){
+	if(jQuery("input[type='file']").val()==""){
+		alert("请上传照片");
+		return;
+	}
+	if(style.className=="picture"||style.className=="double-border"||style.className=="outset-border"||style.className=="transparent"){
+    	bgshow.className="bgshow";
+        loshow.className="loshow";
+        style.className="ridge-border";
+	}
+    else{
+    	style.className="picture";
+    }
+}
+
+
+function style4(){
+	if(jQuery("input[type='file']").val()==""){
+		alert("请上传照片");
+		return;
+	}
+    if(style.className=="picture"||style.className=="double-border"||style.className=="outset-border"||style.className=="ridge-border"){
+        bgshow.className="bghide";
+	    loshow.className="lohide";
+	    style.className="transparent";
+    }
+	else{
+        bgshow.className="bgshow";
+        loshow.className="loshow";
+        style.className="picture";
+    }
+}
+
+var fileSelect = document.getElementById("fileSelect"),
+    fileElem = document.getElementById("fileElem");
+
+fileSelect.addEventListener("click", function (e) {
+    if (fileElem) {
+        fileElem.click();
+    }
+    e.preventDefault(); // prevent navigation to "#"
+}, false);
+
 
 
 function editImage() {
