@@ -15,7 +15,7 @@
 
 ### 界面描述
 1.home页面：对图片进行展示。
-![Image text]( 这里是你的图片链接)
-2.about页面：对我们项目的简单描述
+![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.15.48.png)
+2.about页面：对我们项目的简链接单描述
 3.edit页面：对照片进行编辑
 4.contact页面：对我们创建项目人的联系
