@@ -14,8 +14,20 @@
 
 
 ### 界面描述
-1.home页面：对图片进行展示。
+1.home页面：图片展示。
 ![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.15.48.png)
-2.about页面：对我们项目的简链接单描述
-3.edit页面：对照片进行编辑
-4.contact页面：对我们创建项目人的联系
+2.about页面：网页简介。
+![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.17.47.png)
+3.edit页面：照片编辑。
+[Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.17.56.png)
+4.contact页面：联系我们。
+![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.18.01.png)
+5.登陆页面：用户登陆。
+![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.18.10.png)
+6.注册页面：用户注册。
+![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.18.16.png)
+7.密码修改页面：用户忘记密码可在此修改密码。
+![Image text]()
+8.eidt2页面：登陆后显示此页面，用户可下载图片。
+![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.18.45.png)
+
