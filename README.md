@@ -22,7 +22,7 @@
 ![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.17.47.png)
 <br>
 3.edit页面：照片编辑。
-[Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.17.56.png)
+![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.17.56.png)
 <br>
 4.contact页面：联系我们。
 ![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.18.01.png)
@@ -41,5 +41,10 @@
 <br>
 
 
-### 界面描述
-
+### 功能模块
+1.添加滤镜
+修改图片的灰度，模糊，亮度，对比度，色调，透明度，色彩反转，饱和度，发黄度。
+2.添加边框
+给图片添加双线框，突出框，脊状框，流动框，彩虹款。
+3.图片旋转
+点击图片进行旋转
