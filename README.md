@@ -34,12 +34,15 @@
 ![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.18.16.png)
 <br>
 7.密码修改页面：用户忘记密码可在此修改密码。
-![Image text]()
+![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/QQ图片20180624214439.png)
 <br>
 8.eidt2页面：登陆后显示此页面，用户可下载图片。
-![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/屏幕快照%202018-06-23%2016.18.45.png)
+![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/QQ图片20180624214420.png)
 <br>
 
+### 数据结构
+![Image text](https://github.com/Fionakiki/Myproject/blob/master/images/QQ图片20180624214420.png)
+<br>
 
 ### 功能模块
 1.添加滤镜<br>
