@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>WWC</title>
+		<link rel="stylesheet" type="text/css" href="../css/button.css">
+		<style type="text/css">
+		body{
+		background-color: #ffffff;
+		}
+		.whole-container{
+            width:80%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 10px;
+            background-color: #ffffff;
+        }
+
+        .head-box{
+            width: 100%;
+            height: 200px;
+        }
+
+        .head-image{
+            width: 70px;
+            height: 70px;
+            margin-left: 46.5%;
+            margin-top: 2%;
+        }
+        .head-p-wwc{
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .head-p-cd{
+            font-family: "Courier New";
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .head-p-chinese{
+            font-family: "MingLiU";
+            font-size: 20px;
+            text-align: center;
+        }
+		.function{
+		width:100%;
+		border-top:1px solid #e0e0e0;
+		padding-top: 10px;
+		}
+		form {
+		text-align: center;
+		}
+		.use,.id,.sub,.but{
+		margin-top: 20px;
+		}
+		.but{
+		margin-left: 2%;
+		}
+		.alter_Password{
+
+			font-size: 14px;
+
+			margin-left: 30%;
+
+			margin-top: -2%;
+
+		}
+
+		.in_out{
+
+			margin-left: 3%;
+
+			margin-top: 0.7%;
+
+		}
+		</style>
+	</head>
+	<body>
+		<div class="whole-container">
+            <div class="head-box">
+                <div>
+                    <img src="../images/camera.png" class="head-image"/>
+                </div>
+                <div class="head-p-wwc">W W C</div>
+                <div class="head-p-cd">Create & Design</div>
+                <div class="head-p-chinese">创造/设计/记录时间</div>
+            </div>
+			<div class="function">
+				<form action="../php/enter.php" method="post" onsubmit="return enter()">
+
+					用户名<input class="button disabled button-pill button-primary" type="text" name="username" id="username"><br>
+
+					密&nbsp&nbsp&nbsp码<input class="button disabled button-pill button-primary"
+
+					type="password" name="password" id="password">
+
+					<div class="alter_Password">
+
+						<a href="./alter_password.html" class="find">修改密码</a><br>
+
+					</div>
+
+					<div class="in_out">
+
+						<input class="button disabled button-pill button-primary" type="submit" value="登&nbsp录">
+
+						<input class="button disabled button-pill button-primary" type="button" value="注&nbsp册" onclick="register();">
+
+					</div>
+
+				</form>				
+		
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+		    function enter(){
+		        var username=document.getElementById("username").value;//获取form中的用户名
+		        var password=document.getElementById("password").value;
+		        var regex=/^[/s]+$/;//声明一个判断用户名前后是否有空格的正则表达式
+		        if(regex.test(username)||username.length==0)//判定用户名的是否前后有空格或者用户名是否为空
+		        {
+		            alert("用户名格式不对");
+		            return false;
+		        }
+		        if(regex.test(password)||password.length==0)//同上述内容
+		        {
+		            alert("密码格式不对");
+		            return false;
+		        }
+		        return true;
+		    }
+		    function register(){
+		        window.location.href="register.html";//跳转到注册页面
+		    }
+		</script>
+	</body>
+</html>
