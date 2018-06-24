@@ -33,7 +33,7 @@ window.onscroll = function() {
 
 
 
-var fileSelect = document.getElementById("fileSelect"),
+/*var fileSelect = document.getElementById("fileSelect"),
     fileElem = document.getElementById("fileElem");
 
 fileSelect.addEventListener("click", function(e) {
@@ -41,5 +41,5 @@ fileSelect.addEventListener("click", function(e) {
         fileElem.click();
     }
     e.preventDefault(); // prevent navigation to "#"
-}, false);
+}, false);*/
 
